@@ -42,7 +42,7 @@ public class Main {
 
     // create a method called displayHighScorePosition
     public static void displayHighScorePosition(String playerName, int position) {
-        System.out.printf("%s managed to get into position %d on the high score table.\n", playerName, position);
+        System.out.printf("%s managed to get into position %d on the high score table.%n", playerName, position);
     }
 
     public static int calculateHighScorePosition(int score) {
