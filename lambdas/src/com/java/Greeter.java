@@ -9,7 +9,11 @@ public class Greeter {
 
         // write your code here
         Greeter greeter = new Greeter();
-        HelloWorldGreetingImpl helloWorldGreetingImpl = new HelloWorldGreetingImpl();
-        greeter.greet(helloWorldGreetingImpl);
+
+        Greeting helloWorldGreetingImpl = new HelloWorldGreetingImpl();  // created a new class
+        Greeting myLambdaGreeting = () -> System.out.println("Hello world");  // just creating a function
+
+        myLambdaGreeting.perform();
     }
 }
+
