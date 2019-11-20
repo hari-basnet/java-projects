@@ -1,3 +1,9 @@
 
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(¥òûª8Üèš×å-
+jsquid:S1192 "GDefine a constant instead of duplicating this literal "Cherry" 3 times.(Ç±¦Õøÿÿÿÿ8¡®Æóå-
+[
+squid:S106-"9Replace this use of System.out or System.err by a logger.(ø°Ìãıÿÿÿÿ8¡®Æóå-
+hsquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(ÙĞ¶E8¡®Æóå-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(æÇñÿÿÿÿÿ8¡®Æóå-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(æÇñÿÿÿÿÿ8¡®Æóå-
