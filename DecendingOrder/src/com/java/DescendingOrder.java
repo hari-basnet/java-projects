@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.sun.security.jgss.GSSUtil;
-
 public class DescendingOrder {
 
 	public static int sortDesc(final int num){
