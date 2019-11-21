@@ -1,0 +1,34 @@
+
+[
+squid:S106K"9Replace this use of System.out or System.err by a logger.(ğø›áùÿÿÿÿ8º»ãÇè-
+[
+squid:S106 "9Replace this use of System.out or System.err by a logger.(·êÜöüÿÿÿÿ8ÆÍşÆè-
+gsquid:S20956"DUse try-with-resources or close this "Stream" in a "finally" clause.(ş»ºõüÿÿÿÿ8ŠáğÆè-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ò¸Ô8ÆÍşÆè-
+[
+squid:S1064"9Replace this use of System.out or System.err by a logger.(Š¡ñ·üÿÿÿÿ8ÆÍşÆè-
+Zsquid:S1854R"7Remove this useless assignment to local variable "map".(¼¥ğ»úÿÿÿÿ8ÚøıÇè-
+[
+squid:S1069"9Replace this use of System.out or System.err by a logger.(ÅƒÚ…üÿÿÿÿ8ÆÍşÆè-
+V
+squid:S106^"9Replace this use of System.out or System.err by a logger.(è‚¥8µäšÈè-
+lsquid:S1192<"IDefine a constant instead of duplicating this literal "data.txt" 3 times.(Ü”¡çûÿÿÿÿ8¤­üÇè-
+[
+squid:S106)"9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ8ÆÍşÆè-
+V
+squid:S106A"9Replace this use of System.out or System.err by a logger.(“œÉ8ÅÇè-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(¦ı©8ÆÍşÆè-
+Osquid:S16129",Replace this lambda with a method reference.(ÅƒÚ…üÿÿÿÿ8Ø¬óÆè-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(˜£„Üüÿÿÿÿ8ÆÍşÆè-
+[
+squid:S1061"9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ8ÆÍşÆè-
+U
+squid:S106h"9Replace this use of System.out or System.err by a logger.(Äş!8øä¯Èè-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ıŸ…“ÿÿÿÿÿ8ÆÍşÆè-
+Wsquid:S2864]"4Iterate over the "entrySet" instead of the "keySet".(½Ö²’ûÿÿÿÿ8ÂˆœÈè-
+V
+squid:S106d"9Replace this use of System.out or System.err by a logger.(°°àü8Õ”­Èè-

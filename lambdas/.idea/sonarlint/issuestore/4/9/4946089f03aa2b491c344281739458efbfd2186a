@@ -1,0 +1,7 @@
+
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(´“à8ñô Êè-
+msquid:S1854"JRemove this useless assignment to local variable "helloWorldGreetingImpl".(Îöˆ´ÿÿÿÿÿ8¼¥Ëè-
+^squid:S1854";Remove this useless assignment to local variable "greeter".(µ€¯Ùùÿÿÿÿ8¼¥Ëè-
+Osquid:S1481",Remove this unused "greeter" local variable.(µ€¯Ùùÿÿÿÿ8¼¥Ëè-
+^squid:S1481";Remove this unused "helloWorldGreetingImpl" local variable.(Îöˆ´ÿÿÿÿÿ8¼¥Ëè-
