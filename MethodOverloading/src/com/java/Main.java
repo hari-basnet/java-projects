@@ -13,6 +13,12 @@ public class Main {
         FeetAndInchesToCentimeter ft = new FeetAndInchesToCentimeter();
         ft.calcFeetAndInchesToCentimeters(10,0);
         ft.calcFeetAndInchesToCentimeters(10);
+
+        ///
+
+        Printer myp = new Printer();
+        String result = myp.printerError("aaaaakkkoaaaa");
+        System.out.println(result);
     }
 
     public static int calculateScore(String playerName, int score){

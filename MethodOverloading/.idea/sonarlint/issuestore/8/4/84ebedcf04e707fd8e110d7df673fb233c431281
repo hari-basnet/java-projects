@@ -1,9 +1,12 @@
 
+Xsquid:S2209"5Change this instance-reference to a static reference.(¥ñ€Ãüÿÿÿÿ8›É‡šê-
+Wsquid:S2440"9Remove this instantiation of "FeetAndInchesToCentimeter".(¹¨•Ê8·ùİ˜ê-
 V
-squid:S106"9Replace this use of System.out or System.err by a logger.(îµ±™8€˜ş—ê-
+squid:S106"9Replace this use of System.out or System.err by a logger.(îµ±™8€˜ş—ê-
 V
 squid:S106"9Replace this use of System.out or System.err by a logger.(ïÅğÈ8ÂÓî—ê-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ú–Ÿõşÿÿÿÿ8¿„ó—ê-
 V
-squid:S106"9Replace this use of System.out or System.err by a logger.(¬ı©Á8Øíä—ê-
+squid:S106"9Replace this use of System.out or System.err by a logger.(¬ı©Á8Øíä—ê-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ú–Ÿõşÿÿÿÿ8¿„ó—ê-
+Ssquid:S2209"5Change this instance-reference to a static reference.(«¢Ô8ÉŸšê-
