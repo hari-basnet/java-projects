@@ -1,0 +1,24 @@
+
+Xsquid:S2209"5Change this instance-reference to a static reference.(Õ§„ùÿÿÿÿ8¢¯ÿ–ê-
+Usquid:S2440"2Remove this instantiation of "LeapYearCalculator".(Ïòí­ıÿÿÿÿ8¢¯ÿ–ê-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(–„üõùÿÿÿÿ8’´º—ê-
+Xsquid:S2209"5Change this instance-reference to a static reference.(Ãã¯ïúÿÿÿÿ8¢¯ÿ–ê-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(æÈÁşÿÿÿÿ8®ò—ê-
+Msquid:S2440"*Remove this instantiation of "BarkingDog".(ªó ›ıÿÿÿÿ8¢¯ÿ–ê-
+Ssquid:S2209"5Change this instance-reference to a static reference.(ßêÈª8Ö± —ê-
+Rsquid:S2440"/Remove this instantiation of "EqualSumChecker".(…ùü°øÿÿÿÿ8Ö± —ê-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(ßêÈª8”•—ê-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(àÓ¨¨8¢¯ÿ–ê-
+Tsquid:S2440"1Remove this instantiation of "DecimalComparator".(œé«—øÿÿÿÿ8»òÿ–ê-
+Ssquid:S2209"5Change this instance-reference to a static reference.(Ä£Ì8¢¯ÿ–ê-
+Xsquid:S2209"5Change this instance-reference to a static reference.(æÈÁşÿÿÿÿ8¿ò—ê-
+[
+squid:S106 "9Replace this use of System.out or System.err by a logger.(¬ÄÄÍúÿÿÿÿ8Í¼—ê-
+Ssquid:S2209"5Change this instance-reference to a static reference.(èñô’8¢¯ÿ–ê-
+Usquid:S2440"2Remove this instantiation of "MegaBytesConverter".(íÖÛøÿÿÿÿ8¢¯ÿ–ê-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8¢¯ÿ–ê-
