@@ -18,5 +18,18 @@ public class Main {
         System.out.println(result);
         System.out.println(result2);
 
+        //
+        DecimalComparator dc = new DecimalComparator();
+        System.out.println(dc.areEqualByThreeDecimalPlaces(2.555, 2.555));
+
+        //
+        EqualSumChecker checker = new EqualSumChecker();
+        System.out.println(checker.hasEqualSum(4,5,7));
+
+        //
+        TeenNumberChecker teenCheckeer = new TeenNumberChecker();
+        System.out.println(teenCheckeer.hasTeen(15,88,95));
+        System.out.println(teenCheckeer.hasTeen(35,88,95));
+
     }
 }
