@@ -11,12 +11,11 @@ public class Printer {
 
 
 		for(int i = 0; i < arrayfied.length; i++){
-			for(int j = 0; testChar.length < j; j++){
-				if(arrayfied[i] == testChar[j]){
-					count++;
+
+				if(arrayfied[i].contains(testChar[i])){
+					System.out.println("huyyray");
 				}
 			}
-		}
 
 		return count + "/" + deno;
 	}

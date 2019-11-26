@@ -17,7 +17,7 @@ public class Main {
         ///
 
         Printer myp = new Printer();
-        String result = myp.printerError("aaaaakkkoaaaa");
+        String result = myp.printerError("aaaaazzzzkkkoaaaa");
         System.out.println(result);
     }
 
