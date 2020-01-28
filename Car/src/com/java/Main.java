@@ -4,13 +4,23 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        Car lamborghini = new Car();
+        Car tesla = new Car();
         Car toyota = new Car();
 
-        lamborghini.setModel("hiura don");
+        tesla.setModel("Model S");
 
-        System.out.println("Model is : " + lamborghini.getModel());
+        toyota.setModel("Prius");
 
-        System.out.println(lamborghini);
+        System.out.println("Model is : " + tesla.getModel());
+        System.out.println("Model is : " + toyota.getModel());
+
+        //// account balance
+
+        BankAccount harisAccount = new BankAccount();
+
+        harisAccount.depositFunds(100000);
+        harisAccount.withdrawFunds(500);
+
+        System.out.println("haris account balance is: " + harisAccount.getBalance());
     }
 }
