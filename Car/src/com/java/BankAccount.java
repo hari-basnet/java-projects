@@ -2,13 +2,34 @@ package com.java;
 
 public class BankAccount {
 
-    private int accountNumber;
+    private String accountNumber;
     private double balance;
     private String customerName;
-    private String email;
-    private String phoneNumber;
+    private String customerEmail;
+    private String customerPhoneNumber;
 
-    public void setAccountNumber(int accountNumber) {
+    public BankAccount() {
+        this("56984", 0.00, "Default name", "Default email", "Default phone number");
+        System.out.println("Empty constructor created");
+    }
+
+    public BankAccount(String accountNumber, double balance, String customerName, String customerEmail, String customerPhoneNumber) {
+        System.out.println("Constructors with parameters called");
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
+        this.customerPhoneNumber = customerPhoneNumber;
+
+    }
+
+    // overriding constructor and the calling main constructor
+    // good programming approach
+    public BankAccount(String customerName, String customerEmail, String customerPhoneNumber) {
+        this("66647", 0.00, customerName, customerEmail, customerPhoneNumber);
+    }
+
+    public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 
@@ -20,15 +41,15 @@ public class BankAccount {
         this.customerName = customerName;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setCustomerEmail(String customerEmail) {
+        this.customerEmail = customerEmail;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setCustomerPhoneNumber(String customerPhoneNumber) {
+        this.customerPhoneNumber = customerPhoneNumber;
     }
 
-    public int getAccountNumber() {
+    public String getAccountNumber() {
         return accountNumber;
     }
 
@@ -40,12 +61,12 @@ public class BankAccount {
         return customerName;
     }
 
-    public String getEmail() {
-        return email;
+    public String getCustomerEmail() {
+        return customerEmail;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getCustomerPhoneNumber() {
+        return customerPhoneNumber;
     }
 
     public void depositFunds(double depositAmount) {
