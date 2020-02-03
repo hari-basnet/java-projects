@@ -22,6 +22,7 @@
 *.zip
 *.tar.gz
 *.rar
+*.iml
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
@@ -36,6 +37,8 @@ hs_err_pid*
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.idea
+*.idea 
 
 # Generated files
 .idea/**/contentModel.xml
@@ -48,6 +51,8 @@ hs_err_pid*
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
+.idea/sonarlint
+idea/sonarlint/issuestore
 
 # Gradle
 .idea/**/gradle.xml
