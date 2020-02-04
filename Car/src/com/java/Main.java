@@ -34,5 +34,14 @@ public class Main {
 
         VipCustomer person3 = new VipCustomer("Pramesh Basnet", 5000.00, "pramesh@gmail.com");
         System.out.println(person3.getVipCustomerName());
+
+
+        Wall wall = new Wall(-1.25, -1.25);
+
+        //wall.setHeight(-1.5);
+
+        System.out.println("Width = " + wall.getWidth());
+        System.out.println("Height = " + wall.getHeight());
+        System.out.println("Area of the wall:  " + wall.getArea());
     }
 }
