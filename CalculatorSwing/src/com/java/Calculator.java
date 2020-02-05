@@ -15,6 +15,8 @@ import javax.swing.WindowConstants;
 public class Calculator extends JFrame {
 	
 	private double total = 0;
+	private String firstValue;
+	private String secondValue;
 	
 	public Calculator(){
 		
@@ -67,7 +69,7 @@ public class Calculator extends JFrame {
 				calcScreen.setText(calcScreen.getText() + twoButton.getText());
 			}
 		});
-		buttonPanel.add(fiveButton);
+		buttonPanel.add(twoButton);
 		
 		threeButton.addActionListener(new ActionListener() {
 			
@@ -150,6 +152,7 @@ public class Calculator extends JFrame {
 			@Override
 			public void actionPerformed(final ActionEvent e) {
 				//TODO
+				 calcScreen.setText("");
 			}
 		});
 		buttonPanel.add(addButton);
@@ -181,11 +184,17 @@ public class Calculator extends JFrame {
 		});
 		buttonPanel.add(divideButton);
 		
+		
+		firstValue = calcScreen.getText();
+		secondValue = calcScreen.getText();
+		
 		equalsButton.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(final ActionEvent e) {
 				
+				
+				total = add(Double.parseDouble(firstValue), Double.parseDouble(secondValue));
 				calcScreen.setText(String.valueOf(total));
 			}
 		});
@@ -210,15 +219,15 @@ public class Calculator extends JFrame {
 		
 	}
 	
-	private int add(int x, int y){
+	private double add(double x, double y){
 		return x + y;
 	}
 	
-	private int subtract (int x, int y){
+	private double subtract (double x, double y){
 		return x -y;
 	}
 	
-	private int multiply(int x, int y){
+	private double multiply(double x, double y){
 		return x * y;
 	}
 	
