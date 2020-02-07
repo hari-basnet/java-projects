@@ -1,38 +1,34 @@
 package com.java;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Calendar;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextArea;
-import javax.swing.WindowConstants;
 
 public class Calculator extends JFrame {
-	
+
+	private static final long serialVersionUID = -8785141224106085224L;
 	private double total = 0;
-	private String firstValue;
-	private String secondValue;
-	
-	public Calculator(){
-		
+	private double firstValue;
+	private double secondValue;
+	double plusclick = 0;
+	double minusclick = 0;
+
+	public Calculator() {
+
 		JPanel screenPanel = new JPanel();
 		JPanel buttonPanel = new JPanel();
 		JPanel captionPanel = new JPanel();
-		
-		
+
+
 		BorderLayout bl = new BorderLayout();
-		
-		JTextArea calcScreen = new JTextArea(3,30);
+
+		JTextArea calcScreen = new JTextArea(3, 30);
 		calcScreen.setBackground(Color.gray);
-		
+
 		JLabel caption = new JLabel("This is a simple calculator");
 		captionPanel.add(caption);
-		
+
 		JButton oneButton = new JButton("1");
 		JButton twoButton = new JButton("2");
 		JButton threeButton = new JButton("3");
@@ -152,7 +148,11 @@ public class Calculator extends JFrame {
 			@Override
 			public void actionPerformed(final ActionEvent e) {
 				//TODO
-				 calcScreen.setText("");
+				firstValue = Double.parseDouble(calcScreen.getText());
+
+				calcScreen.setText("");
+				plusclick = 1;
+
 			}
 		});
 		buttonPanel.add(addButton);
@@ -162,6 +162,11 @@ public class Calculator extends JFrame {
 			@Override
 			public void actionPerformed(final ActionEvent e) {
 				//TODO
+
+				firstValue = Double.parseDouble(calcScreen.getText());
+
+				calcScreen.setText("");
+				minusclick = 1;
 			}
 		});
 		buttonPanel.add(minusButton);
@@ -184,18 +189,31 @@ public class Calculator extends JFrame {
 		});
 		buttonPanel.add(divideButton);
 		
-		
-		firstValue = calcScreen.getText();
-		secondValue = calcScreen.getText();
-		
 		equalsButton.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(final ActionEvent e) {
-				
-				
-				total = add(Double.parseDouble(firstValue), Double.parseDouble(secondValue));
-				calcScreen.setText(String.valueOf(total));
+
+
+				secondValue = Double.parseDouble(calcScreen.getText());
+				if (plusclick > 0) {
+					total = add(firstValue, secondValue);
+					calcScreen.setText(String.valueOf(total));
+
+					secondValue = 0;
+					firstValue = 0;
+					plusclick = 0;
+				} else if (minusclick > 0) {
+
+					total = subtract(firstValue, secondValue);
+					calcScreen.setText(String.valueOf(total));
+
+					secondValue = 0;
+					firstValue = 0;
+					minusclick = 0;
+				}
+
+
 			}
 		});
 		buttonPanel.add(equalsButton);
