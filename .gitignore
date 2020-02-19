@@ -130,3 +130,10 @@ fabric.properties
 hs_err_pid*
 
 .idea/caches/build_file_checksums.ser
+/WebApp/nbproject/private/
+/WebApp/build/
+/WebApp/dist/
+/WebApplication1/nbproject/private/
+/WebApplication1/build/
+/WebApplication2/nbproject/private/
+/WebApplication2/build/
