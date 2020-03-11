@@ -31,6 +31,15 @@ public class GroceryList {
 		groceryList.remove(position);
 	}
 	
+	public String findItem(String searchItem){
+//		boolean exists = groceryList.contains(searchItem);
+		int position = groceryList.indexOf(searchItem);
+		if(position >= 0){
+			return groceryList.get(position);
+		}
+		return "Not found";
+	}
+	
 	public static void main(String[] args) {
 		// write your code here
 		
@@ -55,6 +64,8 @@ public class GroceryList {
 		gl.deleteItem(3);
 		
 		gl.printGroceryItem();
+		
+		System.out.println(gl.findItem("chyau"));
 	}
 	
 	
