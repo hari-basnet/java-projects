@@ -1,17 +1,21 @@
 package com.java;
 
+import java.util.Arrays;
+
 public class ReverseArray {
 	
 	public static int[] reverseTheArray(int[] array){
 		
-		int temp = 0;
+		int maxIndex = array.length - 1;
+		int halfLength = array.length / 2; // {1,2,3,4,5} --> 2
 		
-		for(int i = 0; i < array.length / 2; i++){
-			if(array[i] > array[i + 1]){
-				temp = array[i];
-				array[i] = array[i + 1];
-				array[i + 1] = temp;
-			}
+		System.out.println("Given array: \n" + Arrays.toString(array));
+		System.out.println("--------------sorted--------------------");
+		
+		for(int i = 0; i < halfLength; i++){
+			int temp = array[i];
+			array[i] = array[maxIndex - i];
+			array[maxIndex - i] = temp;
 		}
 		return array;
 	}
