@@ -25,6 +25,8 @@ public class Main {
         
         DeluxeBurger deluxeBurger = new DeluxeBurger();
         deluxeBurger.createHamburger();
+    
+        System.out.println(healthyBurger.toString());
 
     }
 }

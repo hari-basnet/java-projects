@@ -1,5 +1,8 @@
 package com.java;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 public class HealthyBurger extends Hamburger {
 	
 	private String healthyExtra1Name;
@@ -37,5 +40,10 @@ public class HealthyBurger extends Hamburger {
 		}
 		
 		return hamburgerPrice;
+	}
+	
+	public String toString () {
+		return ToStringBuilder.reflectionToString(this,ToStringStyle.SHORT_PREFIX_STYLE);
+		
 	}
 }
