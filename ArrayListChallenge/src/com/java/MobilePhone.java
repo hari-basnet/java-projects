@@ -12,7 +12,7 @@ public class MobilePhone {
 		this.myContacts = new ArrayList<Contact>();
 	}
 	
-	public boolean adNewContact(Contact contact){
+	public boolean addNewContact(Contact contact){
 		if(findContact(contact.getName()) >= 0){
 			System.out.println("Contact is already on file");
 			return false;
@@ -76,7 +76,19 @@ public class MobilePhone {
 		return null;
 	}
 	
+	public Contact queryContact(String name){
+		int position = findContact(name);
+		if(position >= 0){
+			return this.myContacts.get(position);
+		}
+		return null;
+	}
 	
-	
-	
+	public void printContacts() {
+		System.out.println("Contact list");
+		
+		for(int i = 0; i < myContacts.size(); i++){
+			System.out.println((i +1) + ". " + myContacts.get(i).getName() + " --> " + myContacts.get(i).getPhoneNumber());
+		}
+	}
 }
