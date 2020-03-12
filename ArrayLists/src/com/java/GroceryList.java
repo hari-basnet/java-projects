@@ -10,7 +10,7 @@ public class GroceryList {
 		groceryList.add(item);
 	}
 	
-	public void printGroceryItem(){
+	public void printGroceryList(){
 		System.out.println("You have " + groceryList.size() + " items in your grocery list");
 		
 		for(int i = 0; i < groceryList.size(); i++){
@@ -25,10 +25,10 @@ public class GroceryList {
 	
 	
 	public void deleteItem(int position){
-		String item = groceryList.get(position);
+		String item = groceryList.get(position -1);
 		
 		System.out.println("Item \"" + item + "\" has been removed from the list.");
-		groceryList.remove(position);
+		groceryList.remove(position -1);
 	}
 	
 	public String findItem(String searchItem){
@@ -37,36 +37,8 @@ public class GroceryList {
 		if(position >= 0){
 			return groceryList.get(position);
 		}
-		return "Not found";
+		
+		return null;
 	}
-	
-	public static void main(String[] args) {
-		// write your code here
-		
-		GroceryList gl = new GroceryList();
-		
-		gl.addItem("Kauli");
-		gl.addItem("Banda");
-		gl.addItem("Bhyanta");
-		gl.addItem("Paneer");
-		gl.addItem("Chyau");
-		
-		gl.printGroceryItem();
-		
-		System.out.println("----------------------------------");
-		
-		gl.modifyGroceryItem(1, "Ban tarool");
-		
-		gl.printGroceryItem();
-		
-		System.out.println("-----------------------------------");
-		
-		gl.deleteItem(3);
-		
-		gl.printGroceryItem();
-		
-		System.out.println(gl.findItem("chyau"));
-	}
-	
 	
 }
