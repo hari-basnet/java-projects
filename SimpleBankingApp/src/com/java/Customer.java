@@ -24,4 +24,5 @@ public class Customer {
 	public ArrayList<Double> getTransactions() {
 		return transactions;
 	}
+	
 }
