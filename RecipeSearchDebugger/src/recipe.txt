@@ -1,0 +1,13 @@
+chicken 
+50
+chicken breasts
+water
+onion
+oil
+
+Kheer
+45
+milk
+water
+dry fruits
+sugar
